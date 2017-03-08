@@ -4,7 +4,7 @@ services:
     image: olegstefaniuk/kafka:latest
     environment:
       - KAFKA_JMX_OPTS=-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=127.0.0.1 -Dcom.sun.management.jmxremote.rmi.port=9991
-      - MX_PORT=9991
+      - JMX_PORT=9991
     ports:
       - 9991:9991
       - 2181:2181
@@ -14,7 +14,7 @@ services:
     image: olegstefaniuk/kafka:latest
     environment:
       - KAFKA_JMX_OPTS=-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=127.0.0.1 -Dcom.sun.management.jmxremote.rmi.port=9992
-      - MX_PORT=9992
+      - JMX_PORT=9992
     ports:
       - 9992:9992
       - 9092:9092
@@ -24,7 +24,7 @@ services:
     image: olegstefaniuk/kafka:latest
     environment:
       - KAFKA_JMX_OPTS=-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=127.0.0.1 -Dcom.sun.management.jmxremote.rmi.port=9993
-      - MX_PORT=9993
+      - JMX_PORT=9993
     ports:
       - 9993:9993
       - 9093:9093
@@ -34,7 +34,7 @@ services:
     image: olegstefaniuk/kafka:latest
     environment:
       - KAFKA_JMX_OPTS=-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=127.0.0.1 -Dcom.sun.management.jmxremote.rmi.port=9994
-      - MX_PORT=9994
+      - JMX_PORT=9994
     ports:
       - 9994:9994
       - 9094:9094
